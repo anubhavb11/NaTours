@@ -1,0 +1,14 @@
+{
+  "name": "na-tours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "csass": "node-sass saas/main.scss css/style.css -w "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
