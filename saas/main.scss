@@ -1,0 +1,26 @@
+@import"abstracts/functions"; 
+@import"abstracts/mixins";
+@import"abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typoraphy";
+@import "base/utilites";
+
+
+@import"components/button";
+@import"components/cards";
+@import"components/composition"; 
+@import"components/feature-box";
+@import"components/form";
+@import"components/popup-content";
+@import"components/story";
+@import"components/bg-video";
+
+
+@import"layout/footer";
+@import"layout/grid";
+@import"layout/header";
+@import"layout/navigation";
+
+@import"pages/home";                    

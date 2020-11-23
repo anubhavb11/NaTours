@@ -1,0 +1,77 @@
+.btn{
+    &,
+    &:link,
+    &:visited {
+        word-spacing: 3px;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 1.5rem 4rem;
+        border-radius: 20rem;
+        transition: all 0.2s;
+        font-size: $default-font-size;
+
+
+        //change for button <button>
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover
+     {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,1.2);
+        /* xsirection offset , y-direction offset, blurr u want more the pix more color will blur,  rgb clolr in shadow*/
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,1.2);
+    }
+
+    &--white {
+        background-color: $color-white;
+        color:$color-gray-dark;
+    }
+
+    &--green{
+        background-color: $color-primary-light;
+        color:$color-white;
+    }
+
+     &--animated {
+        animation-name: moveInBottom;
+        animation-duration: 1s;
+        animation-fill-mode: backwards;
+    }
+
+}
+
+.btn-text{
+    &:link,
+    &:visited {
+        color: $color-primary;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: .5rem 0rem;
+        transition: all 0.2s;
+        font-size: $default-font-size;
+        border-radius: .25rem;
+        border-bottom: solid 1px $color-primary;
+        word-spacing: 3px;
+    }
+    &:hover {
+        color: $color-black;
+        background-color: $color-primary-light;
+        transform: translateY(-3px);
+        box-shadow: 0 .5rem 1rem rgba($color-primary-dark,1.2);
+        /* xsirection offset , y-direction offset, blurr u want more the pix more color will blur,  rgb clolr in shadow*/
+    }
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,1.2);
+    }
+}
